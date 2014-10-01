@@ -31,3 +31,4 @@ build/Release
 **.swm
 **/.sass-cache/
 .DS_Store
+**.map

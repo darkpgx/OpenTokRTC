@@ -157,4 +157,23 @@ body {
     border-width: 15px;
     margin-left: -15px;
   }
+  & h3{
+    color: #529ec8;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: $avantFont;
+  }
+  & p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Muli';
+  }
+  & ul{
+    font-size: 11px;
+    line-height: 13px;
+    color: #999;
+    font-family: 'Muli';
+  }
 }

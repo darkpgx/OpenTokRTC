@@ -86,12 +86,12 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     bottom: -1px;
     font-size: 20px;
-    color: #444444;
+    color: #444;
     font-family: "AvantGardeGothicITCW01X";
     font-weight: normal;
-    border: 1px solid #dddddd;
+    border: 1px solid #DDD;
     box-sizing: border-box;
-    box-shadow: 1px 1px 3px #999999 inset;
+    box-shadow: 1px 1px 3px #999 inset;
     display: inline-block; }
     #controlsContainer .controlsHeader .headerOption {
       display: inline-block;
@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6, p {
       font-size: 20px;
       line-height: 100%;
       font-weight: normal;
-      color: #999999;
+      color: #999;
       cursor: pointer;
       display: inline-block;
       margin-right: 10px;
@@ -243,8 +243,18 @@ body {
     height: 100%;
     transition: all 0.5s;
     -webkit-transition: all 0.5s; }
-  body .container.chatEnabled {
-  }
+    body .container.chatEnabled {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 300px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      width: auto;
+      height: 100%;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s; }
   body #streams_container {
     position: absolute;
     top: 0px;
@@ -284,31 +294,6 @@ body {
   body .clickThrough {
     pointer-events: none; }
 
-body .customTooltip{
-  position: fixed;
-  bottom: 60px;
-  background-color: #1f3443;
-  border: solid 1px #529ec8;
-  padding: 20px;
-  width: 310px;
-  z-index: 550;
-  display: none;
-}
-
-.arrow_box {
-}
-.arrow_box:after, .arrow_box:before {
-}
-
-.arrow_box:after {
-}
-.arrow_box:before {
-  border-color: rgba(82, 158, 200, 0);
-  border-top-color: #529ec8;
-  border-width: 15px;
-  margin-left: -15px;
-}
-
 #controlOptionsRight {
   display: inline-block;
   position: absolute;
@@ -337,3 +322,50 @@ body .customTooltip{
     width: 15px;
     height: 15px;
     cursor: pointer; }
+
+.arrow_box {
+  position: fixed;
+  bottom: 60px;
+  background: #1f3443;
+  border: 1px solid #529ec8;
+  padding: 20px;
+  width: 310px;
+  z-index: 550;
+  display: none; }
+  .arrow_box:after, .arrow_box:before {
+    top: 100%;
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .arrow_box:after {
+    border-color: rgba(31, 52, 67, 0);
+    border-top-color: #1f3443;
+    border-width: 14px;
+    margin-left: -14px; }
+  .arrow_box:before {
+    border-color: rgba(82, 158, 200, 0);
+    border-top-color: #529ec8;
+    border-width: 15px;
+    margin-left: -15px; }
+  .arrow_box h3 {
+    color: #529ec8;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: "AvantGardeGothicITCW01X"; }
+  .arrow_box p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Muli'; }
+  .arrow_box ul {
+    font-size: 11px;
+    line-height: 13px;
+    color: #999;
+    font-family: 'Muli'; }
+
+/*# sourceMappingURL=room.css.map */
