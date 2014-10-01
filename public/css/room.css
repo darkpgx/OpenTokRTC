@@ -244,17 +244,7 @@ body {
     transition: all 0.5s;
     -webkit-transition: all 0.5s; }
   body .container.chatEnabled {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 300px;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: 100%;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
+  }
   body #streams_container {
     position: absolute;
     top: 0px;
@@ -293,6 +283,31 @@ body {
       font-family: 'Muli',sans-serif; }
   body .clickThrough {
     pointer-events: none; }
+
+body .customTooltip{
+  position: fixed;
+  bottom: 60px;
+  background-color: #1f3443;
+  border: solid 1px #529ec8;
+  padding: 20px;
+  width: 310px;
+  z-index: 550;
+  display: none;
+}
+
+.arrow_box {
+}
+.arrow_box:after, .arrow_box:before {
+}
+
+.arrow_box:after {
+}
+.arrow_box:before {
+  border-color: rgba(82, 158, 200, 0);
+  border-top-color: #529ec8;
+  border-width: 15px;
+  margin-left: -15px;
+}
 
 #controlOptionsRight {
   display: inline-block;

@@ -28,6 +28,19 @@ body {
       height: 100%;
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
+      &.chatEnabled{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 300px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: 100%;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s; 
+      }
     }
 
     #streams_container{
@@ -108,5 +121,40 @@ body {
     width: 15px;
     height: 15px;
     cursor: pointer;
+  }
+}
+
+//below is css for the tooltip popup on the icons on bottom right
+
+.arrow_box{
+  position: fixed;
+  bottom: 60px;
+  background: #1f3443;
+  border: 1px solid #529ec8;
+  padding: 20px;
+  width: 310px;
+  z-index: 550;
+  display: none;
+  &:after, &:before {
+    top: 100%;
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after{
+    border-color: rgba(31, 52, 67, 0);
+    border-top-color: #1f3443;
+    border-width: 14px;
+    margin-left: -14px;
+  }
+  &:before{
+    border-color: rgba(82, 158, 200, 0);
+    border-top-color: #529ec8;
+    border-width: 15px;
+    margin-left: -15px;
   }
 }
