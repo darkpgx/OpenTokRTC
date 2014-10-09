@@ -1,0 +1,13 @@
+{
+  "name": "OpenTokRTC",
+  "repository": "https://github.com/opentok/OpenTokRTC",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "env": {
+    "TB_KEY": {
+      "description": "A secret key provided by opentok"
+    },
+    "TB_SECRET": {
+      "description": "obtain by subscribing or trial from opentok"
+    }
+  }
+}
