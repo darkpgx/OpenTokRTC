@@ -1,5 +1,7 @@
 # WebRTC Demo
 
+[![Deploy](https://static.opentok.com/img/platform/img-features-multiparty.png)](https://heroku.com/deploy?template=https://github.com/darkpgx/OpenTokRTC/tree/heroku\_deploy\_button)
+
 ## File Overview
 * `Procfile` is required to run the nodejs app on Heroku
 * `package.json` contains all npm modules to run the app
