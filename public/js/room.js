@@ -25,6 +25,17 @@ Room.prototype = {
       self.unseenCount = 0;
       $("#chatButton").addClass("no-after");
     });
+    $(".container").on("click", function(e){
+      if(e.target.id !== 'chatButton' && 
+        e.target.id !== 'mailButton' && 
+        e.target.id !== 'roomLinkButton' && 
+        e.target.id !== 'recordButton' && 
+        e.target.id !== 'filtersButton'){
+        if($('#chattr').hasClass('chatEnabled')){
+          $('#chatButton').trigger('click');
+        };
+      }
+    });
     $("#recordButton").click(function(){
       $(this).toggleClass("selected");
       var actionVerb, nextAction;
