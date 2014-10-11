@@ -26,13 +26,9 @@ Room.prototype = {
       $("#chatButton").addClass("no-after");
     });
     $(".container").on("click", function(e){
-      if(e.target.id !== 'chatButton' && 
-        e.target.id !== 'mailButton' && 
-        e.target.id !== 'roomLinkButton' && 
-        e.target.id !== 'recordButton' && 
-        e.target.id !== 'filtersButton'){
+      if(e.target.className.indexOf("controlOption") == -1){
         if($('#chattr').hasClass('chatEnabled')){
-          $('#chatButton').trigger('click');
+          $("#chatButton").trigger('click');
         };
       }
     });
