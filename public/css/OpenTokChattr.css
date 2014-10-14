@@ -196,6 +196,9 @@ ol, ul {
   left: 15px;
   border-bottom-color: #555; 
 }
+#chattr .inner-chat ul#messages li.status {
+  color: #ad967d;
+}
 #chattr .inner-chat ul#messages li.status p {
   color: #ad967d;
   width: 90%;
