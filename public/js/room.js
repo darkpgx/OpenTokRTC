@@ -122,10 +122,20 @@ Room.prototype = {
         case "signal:archive":
           var actionVerb, newAction;
           if(data.action === "start"){
+            if(!($("#chatButton").hasClass('selected'))){
+              _this.unseenCount+=1;
+              $("#chatButton").attr("data-unseen-count", _this.unseenCount);
+              $("#chatButton").removeClass("no-after");
+            };
             actionVerb = "started";
             newAction = "Stop";
             $(".controlOption[data-activity=record]").addClass('selected');
           } else{
+            if(!($("#chatButton").hasClass('selected'))){
+              _this.unseenCount+=1;
+              $("#chatButton").attr("data-unseen-count", _this.unseenCount);
+              $("#chatButton").removeClass("no-after");
+            };
             actionVerb = "stopped";
             newAction = "Start";
             $(".controlOption[data-activity=record]").removeClass('selected');
